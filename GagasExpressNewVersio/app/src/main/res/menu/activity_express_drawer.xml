@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_all"
+            android:title="@string/all" />
+
+        <item
+            android:id="@+id/nav_smart_phone"
+            android:icon="@drawable/ic_smart_phone"
+            android:title="@string/smartphone" />
+        <item
+            android:id="@+id/nav_notebook"
+            android:icon="@drawable/ic_notebook"
+            android:title="@string/notebook" />
+        <item
+            android:id="@+id/nav_watch"
+            android:icon="@drawable/ic_watch"
+            android:title="@string/watch" />
+
+    </group>
+
+    <item android:title="@string/extra">
+        <menu>
+            <item
+                android:id="@+id/nav_favorite"
+                android:icon="@drawable/ic_favorite"
+                android:title="@string/favorite" />
+            <item
+                android:id="@+id/nav_store"
+                android:icon="@drawable/ic_store"
+                android:title="@string/store" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_from_all"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        >
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="@dimen/image_size_item"
+            android:layout_height="@dimen/image_size_item"
+            android:src="@drawable/apple_watch_3"
+            android:contentDescription="@string/image_product" />
+
+        <TextView
+            android:id="@+id/title_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_from_top"
+            android:text="@string/apple_watch_3"
+            android:textSize="@dimen/text_size_title"
+            android:layout_marginStart="@dimen/size_from_start"
+            android:textColor="@color/colorTextTitle"
+            />
+
+        <TextView
+            android:id="@+id/description_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_item"
+            android:text="@string/ram_1gb_cores_3"
+            android:layout_marginStart="@dimen/size_from_start"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="@dimen/text_size_description" />
+
+        <TextView
+            android:id="@+id/price_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_item"
+            android:layout_marginStart="@dimen/size_from_start"
+            android:text="@string/price_120"
+            android:textColor="@color/colorTextApp"
+            android:textSize="@dimen/text_size_description" />
+
+        <ImageButton
+            android:id="@+id/favorite_item"
+            android:layout_width="@dimen/size_button"
+            android:layout_height="@dimen/size_button"
+            android:layout_below="@+id/image_item"
+            android:layout_marginTop="@dimen/margin_from_all"
+            android:layout_marginStart="@dimen/margin_from_all"
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/colorPassive"
+            android:contentDescription="@string/favorite_button" />
+
+        <ImageButton
+            android:id="@+id/store_item"
+            android:layout_width="@dimen/size_button"
+            android:layout_height="@dimen/size_button"
+            android:layout_below="@id/image_item"
+            android:layout_marginTop="@dimen/margin_from_all"
+            android:layout_toEndOf="@+id/favorite_item"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorPassive"
+            android:contentDescription="@string/store_button"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

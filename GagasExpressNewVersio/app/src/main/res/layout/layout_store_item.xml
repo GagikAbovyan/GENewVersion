@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_from_all">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground">
+
+        <ImageView
+            android:id="@+id/image_store_item"
+            android:layout_width="@dimen/image_size_item"
+            android:layout_height="@dimen/image_size_item"
+            android:contentDescription="@string/image_product"
+            android:src="@drawable/apple_watch_3" />
+
+        <TextView
+            android:id="@+id/title_store_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="@dimen/margin_from_top"
+            android:text="@string/apple_watch_3"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="@dimen/text_size_title" />
+
+        <TextView
+            android:id="@+id/description_store_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_store_item"
+            android:layout_marginStart="150dp"
+            android:text="@string/ram_1gb_cores_3"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="@dimen/text_size_description" />
+
+        <ImageButton
+            android:id="@+id/favorite_store_item"
+            android:layout_width="@dimen/size_button"
+            android:layout_height="@dimen/size_button"
+            android:layout_below="@+id/image_store_item"
+            android:layout_marginStart="@dimen/margin_from_all"
+            android:layout_marginTop="@dimen/margin_from_all"
+            android:contentDescription="@string/favorite_button"
+            android:src="@drawable/ic_favorite"
+            android:tint="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/store_store_item"
+            android:layout_width="@dimen/size_button"
+            android:layout_height="@dimen/size_button"
+            android:layout_below="@+id/image_store_item"
+            android:layout_marginTop="@dimen/margin_from_top"
+            android:layout_toEndOf="@+id/favorite_store_item"
+            android:contentDescription="@string/store_button"
+            android:src="@drawable/ic_store" />
+
+        <RatingBar
+            android:id="@+id/rating_Bar"
+            style="@style/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_store_item"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:progressTint="@color/colorStar"
+            android:rating="3.5" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
